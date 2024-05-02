@@ -15,20 +15,20 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection="todos") 
+@Document(collection="Books") 
 
-public class TodoDTO {
+public class BookDTO {
 	@Id
 	private String id;
 	
-	@NotNull(message = "todo cannot be null")	
-	private String todo;
+	@NotNull(message = "Book cannot be null")	
+	private String Book;
 	
 	@NotNull(message = "description cannot be null")
 	private String description;
 		
-	@NotNull(message = "completed cannot be null")
-	private Boolean completed;
+	@NotNull(message = "availibilityy cannot be null")
+	private Boolean availibility;
 	
 	
 	
@@ -49,12 +49,12 @@ public class TodoDTO {
 		this.id = id;
 	}
  
-	public String getTodo() {
-		return todo;
+	public String getBook() {
+		return Book;
 	}
  
-	public void setTodo(String todo) {
-		this.todo = todo;
+	public void setBook(String Book) {
+		this.Book = Book;
 	}
  
 	public String getDescription() {
@@ -65,12 +65,12 @@ public class TodoDTO {
 		this.description = description;
 	}
  
-	public Boolean getCompleted() {
-		return completed;
+	public Boolean getavailibility() {
+		return availibility;
 	}
  
-	public void setCompleted(Boolean completed) {
-		this.completed = completed;
+	public void setavailibility(Boolean availibilityy) {
+		this.availibility = availibilityy;
 	}
  
 	public Date getCreatedAt() {
