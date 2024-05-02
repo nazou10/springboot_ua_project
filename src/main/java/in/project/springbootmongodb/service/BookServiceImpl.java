@@ -56,7 +56,7 @@ public class BookServiceImpl implements BookService {
 		}
 		else
 			{
-							throw new BookCollectionExeption(BookCollectionExeption.NotFoundException(id));
+				throw new BookCollectionExeption(BookCollectionExeption.NotFoundException(id));
 		}
 			
 	}
